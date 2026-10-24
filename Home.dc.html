@@ -32,8 +32,8 @@ input,textarea{-webkit-appearance:none;appearance:none}
 <!-- HEADER -->
 <header style="position:fixed;top:0;left:0;right:0;z-index:50;background:{{ headerBg }};border-bottom:1px solid {{ headerBorder }};transition:background .5s ease,border-color .5s ease,padding .5s ease;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)">
   <div style="max-width:1360px;margin:0 auto;padding:{{ headerPad }};display:flex;align-items:center;justify-content:space-between;gap:24px;transition:padding .5s ease">
-    <a href="Home.dc.html" style="display:flex;align-items:center;gap:12px;color:#24484B">
-      <img src="assets/mark-brand.png" alt="Superior Home Solutions" style="height:clamp(46px,9vw,76px);width:auto;display:block">
+    <a href="/" style="display:flex;align-items:center;gap:12px;color:#24484B">
+      <img src="mark-brand.png" alt="Superior Home Solutions" style="height:clamp(46px,9vw,76px);width:auto;display:block">
       <span style="display:flex;flex-direction:column;line-height:1">
         <span style="font-family:'Cormorant Garamond',serif;font-size:clamp(22px,4.6vw,40px);font-weight:600;letter-spacing:.14em;color:#24484B;padding-left:20px">SUPERIOR</span>
         <span style="display:flex;align-items:center;gap:8px;font-size:clamp(9px,1.8vw,16px);letter-spacing:.24em;margin-top:6px;color:#24484B;font-weight:600;white-space:nowrap"><span style="width:12px;height:1px;background:#A38355"></span>HOME SOLUTIONS TX</span>
@@ -45,7 +45,7 @@ input,textarea{-webkit-appearance:none;appearance:none}
         <a href="#about" style="color:#24484B" style-hover="color:#5C4332">About</a>
         <a href="#process" style="color:#24484B" style-hover="color:#5C4332">Process</a>
         <a href="#area" style="color:#24484B" style-hover="color:#5C4332">Service Area</a>
-        <a href="Contact.dc.html" style="color:#24484B" style-hover="color:#5C4332">Contact</a>
+        <a href="/contact.html" style="color:#24484B" style-hover="color:#5C4332">Contact</a>
       </nav>
     </sc-if>
     <div style="display:flex;align-items:center;gap:12px">
@@ -66,7 +66,7 @@ input,textarea{-webkit-appearance:none;appearance:none}
       <a href="#about" onClick="{{ closeMenu }}" style="padding:14px 0;border-bottom:1px solid #E4DDD1;color:#24484B;font-family:'Cormorant Garamond',serif;font-size:24px">About</a>
       <a href="#process" onClick="{{ closeMenu }}" style="padding:14px 0;border-bottom:1px solid #E4DDD1;color:#24484B;font-family:'Cormorant Garamond',serif;font-size:24px">Process</a>
       <a href="#area" onClick="{{ closeMenu }}" style="padding:14px 0;border-bottom:1px solid #E4DDD1;color:#24484B;font-family:'Cormorant Garamond',serif;font-size:24px">Service Area</a>
-      <a href="Contact.dc.html" style="padding:14px 0;border-bottom:1px solid #E4DDD1;color:#24484B;font-family:'Cormorant Garamond',serif;font-size:24px">Contact</a>
+      <a href="/contact.html" style="padding:14px 0;border-bottom:1px solid #E4DDD1;color:#24484B;font-family:'Cormorant Garamond',serif;font-size:24px">Contact</a>
       <a href="#consult" onClick="{{ closeMenu }}" style="margin-top:18px;background:#24484B;color:#F5F1EA;padding:16px 22px;text-align:center;font-size:12px;letter-spacing:.14em;font-weight:600">BOOK A CONSULT</a>
     </nav>
   </sc-if>
@@ -88,7 +88,7 @@ input,textarea{-webkit-appearance:none;appearance:none}
   </div>
   <div data-reveal="mask" style="position:relative;width:100%;height:clamp(520px,96vh,1000px);overflow:hidden;background:#E4DDD1">
     <div data-parallax="hero" style="position:absolute;inset:-2% 0;will-change:transform">
-      <image-slot id="hero-main-v2" shape="rect" src="assets/hero-closet.png" placeholder="Hero project photo — finished custom cabinetry, warm light"></image-slot>
+      <image-slot id="hero-main-v2" shape="rect" src="hero-closet.png" placeholder="Hero project photo — finished custom cabinetry, warm light"></image-slot>
     </div>
   </div>
 </section>
@@ -195,7 +195,7 @@ input,textarea{-webkit-appearance:none;appearance:none}
 
 <!-- DETAIL BAND -->
 <section style="max-width:1360px;margin:0 auto;padding:clamp(72px,10vw,120px) clamp(20px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:64px;align-items:center">
-  <div data-reveal="mask" style="aspect-ratio:1/1;overflow:hidden;background:#E4DDD1"><image-slot id="detail-shot" shape="rect" src="assets/detail-shot.jpg" placeholder="Close-up detail — brass hardware, drawer inserts, LED lighting"></image-slot></div>
+  <div data-reveal="mask" style="aspect-ratio:1/1;overflow:hidden;background:#E4DDD1"><image-slot id="detail-shot" shape="rect" src="detail-shot.jpg" placeholder="Close-up detail — brass hardware, drawer inserts, LED lighting"></image-slot></div>
   <div style="display:flex;flex-direction:column;gap:28px">
     <div data-reveal="up" style="display:flex;align-items:center;gap:14px"><span data-reveal="line" style="display:block;width:44px;height:1px;background:#B08D57"></span><span style="font-size:11px;letter-spacing:.28em;color:#B08D57;font-weight:600">DEFINED BY DETAILS</span></div>
     <h2 data-reveal="up" style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(34px,3.8vw,54px);line-height:1.05;text-wrap:balance">The finishes you'll notice every morning.</h2>
@@ -388,7 +388,7 @@ input,textarea{-webkit-appearance:none;appearance:none}
   <div style="max-width:1360px;margin:0 auto;padding:clamp(58px,10vw,96px) clamp(20px,4vw,32px) 40px;display:flex;flex-direction:column;gap:72px">
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:48px">
       <div style="display:flex;flex-direction:column;gap:22px;grid-column:span 1">
-        <img src="assets/mark-brand-light.png" alt="Superior Home Solutions" style="height:64px;width:auto;align-self:flex-start">
+        <img src="mark-brand-light.png" alt="Superior Home Solutions" style="height:64px;width:auto;align-self:flex-start">
         <div style="display:flex;flex-direction:column;line-height:1">
           <span style="font-family:'Cormorant Garamond',serif;font-size:30px;font-weight:600;letter-spacing:.14em;color:#F5F1EA">SUPERIOR</span>
           <span style="font-size:10px;letter-spacing:.36em;margin-top:6px;font-weight:600">HOME SOLUTIONS</span>
@@ -413,7 +413,7 @@ input,textarea{-webkit-appearance:none;appearance:none}
         <a href="#why" style="color:#E4DDD1" style-hover="color:#F5F1EA">Why choose us</a>
         <a href="#referral" style="color:#E4DDD1" style-hover="color:#F5F1EA">Referral program</a>
         <a href="#area" style="color:#E4DDD1" style-hover="color:#F5F1EA">Service area</a>
-        <a href="Contact.dc.html" style="color:#E4DDD1" style-hover="color:#F5F1EA">Contact</a>
+        <a href="/contact.html" style="color:#E4DDD1" style-hover="color:#F5F1EA">Contact</a>
         <a href="#consult" style="color:#E4DDD1" style-hover="color:#F5F1EA">Book a consult</a>
       </div>
       <div style="display:flex;flex-direction:column;gap:12px;font-size:14px">
@@ -519,9 +519,9 @@ class Component extends DCLogic {
     { q: 'Honest pricing, a clear timeline, and craftsmanship you can feel in the drawers. Already planning our mudroom with them.', who: 'Jenna L.', what: 'Pantry + laundry' },
   ];
   projects = [
-    { key: 'closet', name: 'Walnut walk-in closet', type: 'CLOSET', desc: 'Warm walnut finish with a glass-front display tower, five-drawer dresser, double hanging and angled shoe shelves.', imgs: [1,2,3,4,5].map(n => 'assets/work-closet-' + n + '.jpg') },
-    { key: 'pantry', name: 'White walk-in pantry', type: 'PANTRY', desc: 'Wraparound adjustable shelving, pull-out wood trays, wire baskets, lazy Susans and a marble-look prep counter.', imgs: ['assets/work-pantry-new.png'] },
-    { key: 'mudroom', name: 'Mudroom drop zone', type: 'BUILT-IN', desc: 'Charcoal shaker uppers, a bench with deep drawers and a hook wall for coats and bags.', imgs: ['assets/work-mudroom-2.png'] },
+    { key: 'closet', name: 'Walnut walk-in closet', type: 'CLOSET', desc: 'Warm walnut finish with a glass-front display tower, five-drawer dresser, double hanging and angled shoe shelves.', imgs: [1,2,3,4,5].map(n => 'work-closet-' + n + '.jpg') },
+    { key: 'pantry', name: 'White walk-in pantry', type: 'PANTRY', desc: 'Wraparound adjustable shelving, pull-out wood trays, wire baskets, lazy Susans and a marble-look prep counter.', imgs: ['work-pantry-new.png'] },
+    { key: 'mudroom', name: 'Mudroom drop zone', type: 'BUILT-IN', desc: 'Charcoal shaker uppers, a bench with deep drawers and a hook wall for coats and bags.', imgs: ['work-mudroom-2.png'] },
   ];
   step(k, d, len) { this.setState(s => ({ pi: { ...(s.pi || {}), [k]: (((s.pi || {})[k] || 0) + d + len) % len } })); }
 
@@ -542,11 +542,11 @@ class Component extends DCLogic {
       toggleMenu: () => this.setState({ menu: !s.menu }), closeMenu: () => this.setState({ menu: false }),
       services: [
         { slot: 'svc-office', num: 'I', name: 'Home offices', ph: 'Home office photo', copy: 'Built-in desks, file drawers, bookshelves and hidden storage — a workspace that keeps focus in and clutter out.',
-          src: 'assets/svc-office.jpg' },
+          src: 'svc-office.jpg' },
         { slot: 'svc-walkin', num: 'II', name: 'Closets & wardrobes', ph: 'Closet photo', copy: 'Walk-ins, reach-ins and dressing rooms with drawers, lit shelving and hanging planned around your wardrobe.',
-          src: 'assets/svc-walkin.jpg' },
+          src: 'svc-walkin.jpg' },
         { slot: 'svc-builtin', num: 'III', name: 'Built-ins & vanities', ph: 'Built-in or vanity photo', copy: 'Bathroom vanities, media walls, home offices, mudrooms and bookcases — cabinetry for every room in the house.',
-          src: 'assets/svc-builtin.jpg' },
+          src: 'svc-builtin.jpg' },
       ],
       filters: Object.keys(map).map(k => ({ label: k.toUpperCase(), bg: s.filter === k ? '#24484B' : 'transparent', fg: s.filter === k ? '#F5F1EA' : '#24484B', pick: () => this.setState({ filter: k }) })),
       projects: this.projects.map(p => { const on = !map[s.filter] || map[s.filter] === p.type, i = (s.pi || {})[p.key] || 0, len = p.imgs.length;
